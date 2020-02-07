@@ -7,7 +7,7 @@ class BookList extends Component {
         const books = this.props.booklist.map((book,id) => 
             <Book 
                 name={book.volumeInfo.title} 
-                author={book.volumeInfo.authour? book.volumeInfo.authors.join(", "): "No Author Specified"}
+                author={book.volumeInfo.authours? book.volumeInfo.authors.join(", "): "No Author Specified"}
                 description={book.searchInfo? book.searchInfo.textSnippet : "No description available"}
                 link={book.selfLink}
                 price={book.saleInfo.retailPrice? book.saleInfo.retailPrice.amount : book.saleInfo.saleability} 
