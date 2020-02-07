@@ -4,16 +4,16 @@ import './booklist.css';
 
 class BookList extends Component {
     render(){
-        const books = this.props.booklist.map((book,id) => 
+        const books = this.props.booklist.map((book,id) =>
             <Book 
                 name={book.volumeInfo.title} 
-                author={book.volumeInfo.authors? book.volumeInfo.authors.join(", "): "No Author Specified"}
+                author={book.volumeInfo.hasOwnProperty("authors")? book.volumeInfo.authors.join(", "): "No Author Specified"}
                 description={book.searchInfo? book.searchInfo.textSnippet : "No description available"}
                 link={book.selfLink}
                 price={book.saleInfo.retailPrice? book.saleInfo.retailPrice.amount : book.saleInfo.saleability} 
                 image={book.volumeInfo.imageLinks? book.volumeInfo.imageLinks.thumbnail : "https://upload.wikimedia.org/wikipedia/en/6/60/No_Picture.jpg"}
                 key={id}/>
-            )
+        )
 
         return(
             <section>

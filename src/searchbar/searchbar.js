@@ -82,9 +82,6 @@ class SearchBar extends Component {
     }
 
     render(){
-        const error = this.state.error
-                      ? <div>{this.state.error}</div>
-                      : ""
         return (
             <section className="search-bar">
                 <form className="search-bar-form" onSubmit={e => this.handleSubmit(e)}>
