@@ -1,0 +1,36 @@
+section {
+    font-size: calc(10px + 2vmin);
+    margin: 0;
+}
+
+.search-bar-second-row div, .search-bar-first-row div {
+    display: inline-block;
+    padding: 10px;
+}
+
+.search-bar-first-row {
+    background-color: grey
+}
+
+.search-bar-second-row {
+    background-color: darkgrey
+}
+
+label {
+    padding: 5px;
+}
+
+input, optgroup {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#search-query {
+    background-color: yellow;
+}
+
+button {
+    padding: 8px;
+    border-radius: 5px;
+    font-size: calc(5px + 2vmin);
+}

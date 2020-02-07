@@ -1,0 +1,27 @@
+.book {
+    padding-right: 5%;
+    padding-left: 5%;
+    border-top: 1px solid grey;
+}
+
+
+.book-description {
+    display: flex;
+}
+
+.book-description div {
+    padding: 10px;
+}
+
+img {
+    display: inline-block;
+    width: 150px;
+}
+
+.book-image {
+    flex: 1
+}
+
+.book-details {
+    flex: 8
+}
