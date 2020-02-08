@@ -111,11 +111,9 @@ class SearchBar extends Component {
                                 onChange={e => this.printTypeChanged(e.target.value)}>
                                 <optgroup>
                                     <option value="none">all</option>
-                                    <option value="partial">partial</option>
-                                    <option value="full">full</option>
-                                    <option value="free-ebooks">free-ebooks</option>
-                                    <option value="paid-ebooks">paid-ebooks</option>
-                                    <option value="ebooks">ebooks</option>
+                                    <option value="books">books</option>
+                                    <option value="magazines">magazines</option>                                    
+
                                 </optgroup>
                             </select>
                         </div>
@@ -128,8 +126,11 @@ class SearchBar extends Component {
                                 onChange={e => this.bookTypeChanged(e.target.value)}>
                                 <optgroup>
                                     <option value="none">all</option>
-                                    <option value="books">books</option>
-                                    <option value="magazines">magazines</option>
+                                    <option value="partial">partial</option>
+                                    <option value="full">full</option>
+                                    <option value="free-ebooks">free-ebooks</option>
+                                    <option value="paid-ebooks">paid-ebooks</option>
+                                    <option value="ebooks">ebooks</option>
                                 </optgroup>
                             </select>                            
                         </div>
